@@ -1,0 +1,10 @@
+# www.netcentric.biz/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Raohmaru -- Frontender -- @raulparralejo
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5, JS
