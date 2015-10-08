@@ -2,8 +2,19 @@
 
 var arr3 = [];
 
+function normalFunc() {
+	console.time("normalFunc");
+	
+	var arr1 = new Array(500000);
+	for (var i = arr1.length - 1; i >= 0; i--) {
+		arr1[i] = new Object();
+	};
+	
+	console.timeEnd("normalFunc");
+}
+
 function expensiveFunc1() {
-	console.time("Array initialize");
+	console.time("expensiveFunc1");
 	
 	var arr1 = arr2 = new Array(500000);
 	for (var i = arr1.length - 1; i >= 0; i--) {
@@ -14,11 +25,11 @@ function expensiveFunc1() {
 	
 	arr1 = undefined;
 	
-	console.timeEnd("Array initialize");
+	console.timeEnd("expensiveFunc1");
 }
 
 function expensiveFunc2() {
-	console.time("Array initialize 2");
+	console.time("expensiveFunc2");
 	
 	var arr1 = new Array(500000);
 	var arr2 = arr1;
@@ -29,8 +40,12 @@ function expensiveFunc2() {
 	arr1 = undefined;
 	arr3 = arr3.concat(arr2)
 	
-	console.timeEnd("Array initialize 2");
+	console.timeEnd("expensiveFunc2");
 }
+
+$('#csltim-run0').click(function(){
+	normalFunc();
+});
 
 $('#csltim-run1').click(function(){
 	expensiveFunc1();
