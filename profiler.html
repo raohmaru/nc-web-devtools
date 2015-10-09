@@ -1,0 +1,28 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Profiler | Web Developer Tools</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+
+    <body>
+        <section class="align-center">
+            <button type="button" class="btn" id="csltim-run0">Normal function</button><br>
+            <button type="button" class="btn" id="csltim-run1">Memory leak 1</button>
+            <button type="button" class="btn" id="csltim-profile1">JS Profile</button><br>
+            <button type="button" class="btn" id="csltim-run2">Memory leak 2</button>
+            <button type="button" class="btn" id="csltim-profile2">JS Profile</button>
+        </section>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/profiler.js"></script>
+    </body>
+</html>
